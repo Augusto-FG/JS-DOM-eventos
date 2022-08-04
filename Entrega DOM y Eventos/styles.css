@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #ededed;
+}
+h1 {
+  width: 200px;
+  display: inline-block;
+}
+h5 {
+  font-size: 25px;
+  text-align: center;
+  background-color: rgba(6, 106, 255, 0.7);
+}
+nav > div > form > input {
+  border-radius: 100px;
+}
+body > nav.navbar {
+  padding: 25px 20px;
+  position: sticky;
+  top: 10px;
+  z-index: 1;
+  box-shadow: 0px 0px 19px -5px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0px 0px 19px -5px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 19px -5px rgba(0, 0, 0, 1);
+  margin: 20px;
+  background-color: white;
+}
+
+
+/*cambiar color de search*/
+
+nav > div > form > button.btn {
+  border: solid 2px #0077ff;
+}
+nav > div > form > button.btn:hover {
+  border: solid 2px #0077ff;
+  color: white;
+  background-color: #0077ff;
+}
+**************************************
+footer {
+  padding: 20px;
+  background-color: #cdede8;
+  font-weight: bold;
+  border-top: solid 1px #0077ff;
+}
+
+.fa-shopping-cart {
+  font-size: 30px;
+  color: #0077ff;
+  cursor: pointer;
+}
+#cards {
+  padding: 30px 15%;
+}
+.card {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 350px;
+  /*   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75); */
+}
+.card:hover {
+  transition: 0.6s;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.third {  /* botones para añadir al carro */
+  color: #fff;
+  box-shadow: 0 0 40px 40px #0068f0 inset, 0 0 0 0 #0068f0;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 200px;
+  padding: 9px;
+  border: none;
+}
+.third:hover { /* botones para añadir al carro - al presionar*/
+  box-shadow: 0 0 0px 0 #0077ff inset, 0 0 20px 4px #0077ff;
+  color: #000000;  /* color de letra para añadir al carro*/
+}
+.third:hover .in-card {
+  color: #0077ff;
+}
+
+.in-card {
+  font-size: 16px;
+  color: white;
+  padding-left: 8px;
+}
+.card-title {
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  border-bottom: solid 2px #b1afafec; /* marco de texto-imagen*/
+}
+
+.card-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* CART */
+.side-bar-wrapper {
+  position: fixed;
+  top: 0;
+  width: 0vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#side-bar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  background-color: whitesmoke;
+  z-index: 3;
+  border-left: solid 1px #0077ff;
+}
+
+#close-cart {
+  color: #0077ff;
+  font-size: 40px;
+  cursor: pointer;
+  display: block;
+  text-align: end;
+  width: 400px;
+}
+#close-cart > i {
+  margin: 14px 20px 0px;
+}
+
+.cart-container {
+  width: 400px;
+  display: block;
+  transition: 0.3s;
+  margin-right: 2px;
+}
+h3.cart {
+  margin-top: -20px;
+}
+
+#cart-counter {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  background-color: white;
+  padding: 0px 6px;
+  color: #0077ff; /* cero del carrito */
+  border-radius: 50%;
+  border: solid 1px #0077ff;
+  font-weight: bold;
+}
+
+.img-cart {
+  width: 100px;
+  /*height: 100px;*/
+}
+.card-carrito {
+  display: flex;
+}
+.item-count {
+  margin: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: white;
+  padding: 0px 5px 2px 5px;
+}
+
+.eliminar-item {
+  color: #bd7474;
+  cursor: pointer;
+}
+.fa-minus,
+.fa-plus {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#cart > div > div:nth-child(3) {
+  background-color: rgba(19, 187, 182, 0.1);
+  padding: 10px;
+}
+#cart > div > div:nth-child(2) > span.font-weight-bold.d-block.m-2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.clear-cart {
+  border: solid 2px #0077ff;
+  margin: 20px;
+}
+.cart-footer {
+  text-align: center;
+  width: 400px;
+}
+
+#toggle-theme {
+  border: solid 1px black;
+  cursor: pointer;
+}
+#toggle-theme:focus {
+  box-shadow: none;
+}
+#toggle-theme:checked {
+  background-color: #0077ff;
+  border: solid 1px white;
+}
+
